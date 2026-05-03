@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    height: 100vh;
+    background-image:url("../Img/background.png");
+}
+header{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d3b615;
+}
+.navbar{
+    display: flex;
+    height: 60px;
+    width: 600px;
+    margin-bottom: 8px;
+    border-radius: 20px;
+    background-color: #faeaa7;
+    align-items: center;
+    justify-content: center;
+    
+}
+.navbar ul{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.navbar-link{
+    width: 70px;
+    height: 100px;
+    z-index: 0;
+}
+.navbar-link a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+}
+.navbar-text{
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.navbar-icon{
+    width: 30px;
+    height: 30px;
+    transition: 0.4s;
+    transform: translateY(30px);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#img{
+    font-size: 30px;
+}
+
+
+/*  SLIDE CARDS DOS PROJETOS */
+main{
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main h1{
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #faeaa7;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px;
+}
+.projectContainer{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+.projectList{
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    width: 700px;
+    background-color: transparent;
+    box-shadow: 5px 5px 10px;
+    overflow: hidden;
+}
+
+.projectSlider{
+    display: flex;
+    width: 400%;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    margin-left: 126%;
+    gap: 20px;
+    transition: 0.40s;
+}
+
+.project{
+    display: flex;
+    position: relative;
+    margin: 0px;
+    padding: 10px;
+    width: 400px;
+    height: 300px;
+    background-color: #faeaa7;
+    text-align: center;
+    transition: 0.40s;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* CENTRALIZA OS INPUTS */
+.nav-manual, .nav-auto{
+    position: absolute;
+    align-items: center;
+    margin-top: 380px;
+    display: flex;
+    justify-content: center;
+
+}
+.nav-manual .manual-btn, .nav-auto div{
+    border: 1px solid crimson;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 9px;
+}
+.nav-manual .manual-btn:hover{
+    background-color: crimson;
+    transition: 0.70s;
+}
+
+/* ALTERA BACKGROUND DOS INPUTS*/
+#btn1:checked ~ .nav-auto .auto-btn1{
+    background-color: crimson;
+    transition: 0.7s;    
+}
+#btn2:checked ~ .nav-auto .auto-btn2{
+    background-color: crimson;
+    transition: 0.7s;
+}
+#btn3:checked ~ .nav-auto .auto-btn3{
+    background-color: crimson;
+    transition: 0.7s;    
+}
+
+/* MOVIMENTA OS PROJETOS DENTRO DO PROJECTSLIDES*/
+#btn1:checked ~ .projectSlider .active{
+    margin-left: 0%;
+}
+#btn2:checked ~ .projectSlider .active{
+    margin-left: -69%;
+}
+#btn3:checked ~ .projectSlider .active{
+    margin-left: -136%;
+}

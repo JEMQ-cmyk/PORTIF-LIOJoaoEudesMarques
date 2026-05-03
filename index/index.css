@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    height: 100vh;
+    background-image:url("../Img/background.png");
+}
+
+/* ESTILIZAÇÃO DO CABEÇALHO E AFINS*/
+header{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d3b615;
+}
+.navbar{
+    display: flex;
+    height: 60px;
+    width: 600px;
+    margin-bottom: 8px;
+    border-radius: 20px;
+    background-color: #faeaa7;
+    align-items: center;
+    justify-content: center;
+    
+}
+.navbar ul{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.navbar-link{
+    width: 70px;
+    height: 100px;
+    z-index: 0;
+}
+.navbar-link a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ 
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+}
+.navbar-text{
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.navbar-icon{
+    width: 30px;
+    height: 30px;
+    transition: 0.4s;
+    transform: translateY(30px);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#img{
+    font-size: 30px;
+}
+
+main{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px;
+
+}
+.conteudo{
+    display:flex;
+    justify-content: space-between;
+
+}
+.perfil{
+    padding: 20px;
+    background-color: #faeaa7;
+    border-radius: 15%;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+}
+.conteudo p{
+    background-color: #faeaa7;
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 18px;
+    text-align: justify;
+    margin-left: 15px;
+    border-radius: 20px;
+}
+.ferramentas{
+    padding: 15px;
+}
+.ferramentas h1{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #faeaa7;
+}
+.tools{
+    display: flex;
+    flex-wrap:wrap ;
+    width: 96.90%;
+    margin-top: 8px;
+    padding: 15px;
+    background-color: #faeaa7;
+    border-radius: 20px;
+}
