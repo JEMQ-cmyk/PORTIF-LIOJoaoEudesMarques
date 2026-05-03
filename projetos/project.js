@@ -1,13 +1,15 @@
 const navbarLinks = document.querySelectorAll('.navbar-link');
-
 var cont = 1;
 
+// deixa o primeiro input como ativo
 document.getElementById('btn1').checked = true;
 
+// define um intervalo de tempo de 5s
 setInterval(() => {
     nextCard()
 }, 5000);
 
+// muda o preenchimento dos inputs
 function nextCard(){
 
     cont++;

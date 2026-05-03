@@ -74,6 +74,7 @@ a{
 main{
     padding: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 10px 10px 20px;
 }
 
 main h1{
@@ -114,10 +115,13 @@ main h1{
     gap: 20px;
     transition: 0.40s;
 }
-
+.projectSlider input{
+    display: none;
+}
 .project{
     display: flex;
     position: relative;
+    flex-direction: column;
     margin: 0px;
     padding: 10px;
     width: 400px;
@@ -126,6 +130,26 @@ main h1{
     text-align: center;
     transition: 0.40s;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+.project #tools{
+    width: 80px;
+}
+#linkIcons{
+    display: flex;
+    position: absolute;
+    padding: 10px;
+    bottom: 0;
+    gap: 20px;
+}
+.project p{
+    padding: 2px;
+    margin-left: 2px;
+    font-size: 11px;
+    text-align: justify;
+}
+.containerTools{
+    margin-bottom: 10px;
 }
 
 /* CENTRALIZA OS INPUTS */

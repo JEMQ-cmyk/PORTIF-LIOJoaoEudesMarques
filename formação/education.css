@@ -72,6 +72,7 @@ a{
 main{
     padding: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 2px 2px 10px;
 }
 main h1{
     display: flex;
@@ -80,10 +81,13 @@ main h1{
     padding: 8px;
     background-color: #faeaa7;
     border-radius: 20px;
+    box-shadow: 2px 2px 8px;
 }
 .formação{
     display: flex;
     padding: 15px;
+    margin-top: 18px;
+    box-shadow: 2px 2px 10px;
 }
 .certificate{
     font-size: 12px;
@@ -101,7 +105,7 @@ main h1{
     width: 400px;
     background-color: #faeaa7;
     border-radius: 20px;
-
+    box-shadow: 1px 1px 2px;
 }
 .logo{
     width: 90px;
