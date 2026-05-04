@@ -68,3 +68,103 @@ a{
 #img{
     font-size: 30px;
 }
+main{
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    height: 100vh;
+    box-shadow: 1px 1px 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+
+}
+main h1{
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #faeaa7;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px;
+}
+.containerContents{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 800px;
+    background-color:transparent;
+    box-shadow: 10px 10px 20px;
+    gap: 10px;
+}
+.containerLinks{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    background-color: crimson;
+}
+.containerForms{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.containerForms form{
+    display: flex;
+    padding: 20px;
+    font-size: 13px;
+    flex-direction: row;
+    gap: 20px;
+    background-color:#525151;
+    border-radius: 20px;
+    height: 200px;
+    box-shadow: 1px 1px 4px;
+}
+.containerForms form section{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+input,
+textarea{
+    border-radius: 5px;
+    border: 0.100rem solid transparent;
+    background-color: #c0c0c0;
+    padding: 3px;
+    transition: 0.4s;
+}
+input:focus, 
+input:hover,
+textarea:focus,
+textarea:hover{
+    outline: none;
+    border-color: crimson;
+    box-shadow: 0 0 0.3112rem;
+}
+.containerForms form section button{
+    outline: none;
+    text-align: center;
+    width: 70px;
+    margin: 4px 4px;
+    bottom: 0;
+    padding: 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 2px solid crimson;
+    background-color: crimson;
+    color: white;
+    transition: 0.40s;
+}
+.containerForms form section button:hover{
+    background-color: white;
+    color: crimson;
+    box-shadow: 1px 1px 3px black;
+}
+
+.containerForms form section button:disabled{
+    cursor: not-allowed;
+    background-color: #333;
+}

@@ -24,3 +24,52 @@ navbarLinks.forEach(navbarLinks =>{
 
     });
 });
+// ------------------------------------------
+
+// ENVIAR FORMULÁRIO
+
+// define o formulário e o botão
+const forms = document.getElementById('forms');
+const btn = document.getElementById('button');
+
+// adiciona um eventode enviar
+forms.addEventListener('submit', function(e){
+
+    e.preventDefault();
+
+    btn.disabled = true;
+    btn.innerText = "enviando...";
+    btn.style.backgroundColor = "#333";
+    btn.style.borderColor = "#333";
+// converte os dados dos inputs 
+    const formData = new FormData(forms);
+    const data = Object.fromEntries(formData);
+
+// através do formsubmit faz a verificação e envia pro email
+    fetch("https://formsubmit.co/ajax/joaoeudesmarques.jemq@gmail.com",{
+        method: "POST",
+        headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+        },
+// trsnforma os dados em json
+        body: JSON.stringify(data)  
+    })
+
+    .then(response => response.json())
+    .then(data => {
+        btn.innerText = "enviado!"
+        btn.style.backgroundColor = "#14dc14";
+        btn.style.borderColor = "#14dc14";
+        forms.reset();
+
+        setTimeout(() =>{
+            btn.innerText = "Enviar"
+            btn.style.backgroundColor = "#dc143c";
+            btn.style.borderColor = "#dc143c";
+            
+        }, 2000);
+    })
+    .catch(error => console.log(error));
+
+});
