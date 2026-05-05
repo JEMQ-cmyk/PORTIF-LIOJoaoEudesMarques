@@ -103,7 +103,7 @@ main h1{
     flex-direction: row;
     align-items: center;
     padding: 20px;
-    background-color: crimson;
+    justify-content: center;
 }
 .containerForms{
     display: flex;
