@@ -92,7 +92,7 @@ main h1{
     padding: 20px;
     flex-direction: column;
     margin-top: 20px;
-    width: 800px;
+    width: 600px;
     background-color:transparent;
     box-shadow: 10px 10px 20px;
     gap: 10px;
@@ -168,11 +168,17 @@ textarea:hover{
     background-color: #333;
 }
 
+/* diminui a pagina quando aberta em dispositivos moveis*/
 @media (max-width: 760px) {
     
     .containerForms form{
         flex-direction: column;
         height: 100%;
+    }
+    .containerContents{
+        width: 78%;
+        height: 100%;
+        transition: 0.1s;
     }
 
 }

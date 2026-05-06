@@ -116,11 +116,18 @@ main h1{
     border: 10px solid white;
     border-radius: 40%;
 }
-@media (max-width: 760px) {
+@media (max-width: 500px) {
     .certificate li{
-        width: 100%;
-        font-size: 14px;
+        width: 90%;
+        font-size: 9px;
         padding: 5px;
+    }
+    .certificate li div h2{
+        font-size: 16px;
+    }
+    .certificate li a img{
+        width: 40px;
+        height: 40px;
     }
 
 }
