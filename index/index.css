@@ -3,6 +3,7 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
+
 }
 body{
     height: 100vh;
@@ -15,6 +16,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
     background-color: #d3b615;
 }
 .navbar{
@@ -45,7 +47,6 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
- 
     font-weight: 500;
 }
 a{
@@ -71,30 +72,40 @@ a{
     font-size: 30px;
 }
 
+/* estilização do conteúdo principal*/
 main{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 15px;
-    height: 100vh;
+    height: 100%;
     box-shadow: 10px 10px 20px;
 }
 .conteudo{
     display:flex;
+    flex-wrap: wrap;
     padding: 10px;
     justify-content: space-between;
     box-shadow: 1px 1px 8px;
+    gap: 10px;
+    box-sizing: border-box;
 }
 .perfil{
+    display: flex;
     padding: 20px;
     background-color: #faeaa7;
     border-radius: 15%;
-    width: 200px;
+    flex: 0 0 200px;
     height: 200px;
-    z-index: 1;
+}
+#description{
+    display: flex;
+    padding: 10px;
+    background-color: #faeaa7;
+    border-radius: 20px;
+    flex: 1 1 100px;
 }
 .conteudo p{
     background-color: #faeaa7;
     margin-top: 10px;
-    padding: 20px;
     font-size: 18px;
     text-align: justify;
     margin-left: 15px;
@@ -118,4 +129,10 @@ main{
     padding: 15px;
     background-color: #faeaa7;
     border-radius: 20px;
+}
+
+@media(min-width: 1024px){
+    .conteudo{
+        flex-direction: row;
+    }
 }
