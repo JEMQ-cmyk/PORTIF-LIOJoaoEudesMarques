@@ -72,7 +72,6 @@ main{
     display: flex;
     flex-direction: column;
     padding:20px;
-    height: 100vh;
     box-shadow: 1px 1px 8px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     align-items: center;
@@ -167,4 +166,13 @@ textarea:hover{
 .containerForms form section button:disabled{
     cursor: not-allowed;
     background-color: #333;
+}
+
+@media (max-width: 760px) {
+    
+    .containerForms form{
+        flex-direction: column;
+        height: 100%;
+    }
+
 }
