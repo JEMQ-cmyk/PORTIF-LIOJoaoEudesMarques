@@ -130,9 +130,3 @@ main{
     background-color: #faeaa7;
     border-radius: 20px;
 }
-
-@media(min-width: 1024px){
-    .conteudo{
-        flex-direction: row;
-    }
-}
