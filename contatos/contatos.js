@@ -64,12 +64,15 @@ forms.addEventListener('submit', function(e){
         forms.reset();
 
         setTimeout(() =>{
-            btn.innerText = "Enviar"
             btn.style.backgroundColor = "#dc143c";
             btn.style.borderColor = "#dc143c";
+            btn.innerText = "Enviar"
+            btn.disabled = false;
+            btn.style.color = "#ffff"
             
         }, 2000);
     })
     .catch(error => console.log(error));
 
+    
 });

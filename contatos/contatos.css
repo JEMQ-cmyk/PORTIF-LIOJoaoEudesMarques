@@ -158,9 +158,9 @@ textarea:hover{
     transition: 0.40s;
 }
 .containerForms form section button:hover{
-    background-color: white;
     color: crimson;
     box-shadow: 1px 1px 3px black;
+    background-color: white;
 }
 
 .containerForms form section button:disabled{
@@ -179,6 +179,7 @@ textarea:hover{
         width: 78%;
         height: 100%;
         transition: 0.1s;
+    
     }
 
 }
