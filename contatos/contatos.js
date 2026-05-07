@@ -32,16 +32,18 @@ navbarLinks.forEach(navbarLinks =>{
 const forms = document.getElementById('forms');
 const btn = document.getElementById('button');
 
-// adiciona um eventode enviar
+// adiciona um evento de enviar
 forms.addEventListener('submit', function(e){
 
+//evita que a página recarregue antes de enviar formulário
     e.preventDefault();
 
+// desabilita o botão durante o processo de envio 
     btn.disabled = true;
     btn.innerText = "enviando...";
     btn.style.backgroundColor = "#333";
     btn.style.borderColor = "#333";
-// converte os dados dos inputs 
+// pega os names e os dados dos inputs com FormData e com data transforma em um objeto literal com os dados
     const formData = new FormData(forms);
     const data = Object.fromEntries(formData);
 
@@ -52,11 +54,13 @@ forms.addEventListener('submit', function(e){
         'Content-Type': 'application/json',
         'Accept': 'application/json'
         },
-// trsnforma os dados em json
+// trsnforma os dados de data em json
         body: JSON.stringify(data)  
     })
 
     .then(response => response.json())
+
+// caso os dados forem enviados com sucesso
     .then(data => {
         btn.innerText = "enviado!"
         btn.style.backgroundColor = "#14dc14";
