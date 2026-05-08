@@ -138,7 +138,7 @@ main h1{
 .project #tools{
     width: 80px;
 }
-#linkIcons{
+.linkIcons{
     display: flex;
     position: absolute;
     padding: 10px;
@@ -146,6 +146,13 @@ main h1{
     gap: 20px;
 }
 
+.linkIcons:hover{
+    transform: translateY(-20px);
+    transition: 0.4s;
+    padding: 10px;
+    background-color: #d3b615;
+    border-radius: 50%;
+}
 .project p{
     padding: 2px;
     margin-left: 2px;
